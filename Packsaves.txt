@@ -1,0 +1,22 @@
+@echo off
+C:
+ECHO Y | DEL C:\MCB\RESULTS\*.*
+type C:\MCB\OUTPUT\MCBTEST_1.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB1.txt
+type C:\MCB\OUTPUT\MCBTEST_2.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB2.txt
+type C:\MCB\OUTPUT\MCBTEST_3.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB3.txt
+type C:\MCB\OUTPUT\MCBTEST_4.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB4.txt
+type C:\MCB\OUTPUT\MCBTEST_5.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB5.txt
+type C:\MCB\OUTPUT\MCBTEST_6.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB6.txt
+type C:\MCB\OUTPUT\MCBTEST_7.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB7.txt
+type C:\MCB\OUTPUT\MCBTEST_8.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB8.txt
+type C:\MCB\OUTPUT\MCBTEST_9.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB9.txt
+type C:\MCB\OUTPUT\MCBTEST_10.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB10.txt
+type C:\MCB\OUTPUT\MCBTEST_11.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB11.txt
+type C:\MCB\OUTPUT\MCBTEST_12.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB12.txt
+type C:\MCB\OUTPUT\MCBTEST_13.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB13.txt
+type C:\MCB\OUTPUT\MCBTEST_14.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB14.txt
+type C:\MCB\OUTPUT\MCBTEST_20.txt | findstr /v "^$" >> C:\MCB\RESULTS\MCB20.txt
+@ftp -s:C:\MCB\BATCH_SCRIPT\T96.txt
+echo on
+echo complete ..
+pause
